@@ -36,6 +36,10 @@ app.directive('navbar', function ($rootScope, AuthService, AUTH_EVENTS, $state) 
                 scope.user = null;
             };
 
+            scope.seeTimeline = function() {
+                $state.go('timeline')
+            }
+
             setUser();
 
             $rootScope.$on(AUTH_EVENTS.loginSuccess, setUser);

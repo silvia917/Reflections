@@ -33,12 +33,14 @@ var seedUsers = function () {
         },
         {
             email: 'obama@gmail.com',
-            password: 'potus'
+            password: 'potus',
+            photo: 'https://www.whitehouse.gov/sites/whitehouse.gov/files/images/Administration/People/president_official_portrait_hires.jpg'
             
         },
         {
             email: 'grumpy@grumpy.com',
-            password: 'hello'
+            password: 'hello',
+            photo: 'https://pbs.twimg.com/profile_images/616542814319415296/McCTpH_E.jpg'
         }
     ];
 
@@ -49,9 +51,19 @@ var seedUsers = function () {
 var seedMemories = function() {
     var memories = [
     {
+        date: new Date('Jan 20, 2009'),
+        memory: "Became president. Yay!",
+        user: 'obama@gmail.com'
+    },
+    {
         date: new Date('Aug 4, 1961'),
         memory: "I was born!",
         user: 'obama@gmail.com'
+    },
+    {
+        date: new Date('Sept 17, 2012'),
+        memory: "Got some cat toys. They sucked.",
+        user: "grumpy@grumpy.com"
     },
     {
         date: new Date('Apr 4, 2012'),

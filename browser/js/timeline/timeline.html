@@ -1,0 +1,10 @@
+<div class="container">
+<img id="user-photo" ng-src="{{photo}}"/>
+</div>
+
+<div ng-repeat="memory in memories">
+	<div class='individual'>
+	<span class='mtext' data-sr="enter bottom, roll 45deg, over 2s">{{memory.date}}</span>
+	<span class='mtext' data-sr>{{memory.memory}}</span>
+</div>
+</div>

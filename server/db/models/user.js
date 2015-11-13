@@ -1,6 +1,8 @@
 'use strict';
 var crypto = require('crypto');
 var mongoose = require('mongoose');
+var Memory = require('./memory')
+var Schema = mongoose.Schema;
 
 var schema = new mongoose.Schema({
     email: {
@@ -23,7 +25,11 @@ var schema = new mongoose.Schema({
     },
     google: {
         id: String
-    }
+    },
+    photo: {
+        type: String
+    },
+    memories: [{type: Schema.Types.ObjectId, ref: 'Memory'}]
 });
 
 // generateSalt, encryptPassword and the pre 'save' and 'correctPassword' operations
