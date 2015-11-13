@@ -7,10 +7,7 @@ app.directive('navbar', function ($rootScope, AuthService, AUTH_EVENTS, $state) 
         link: function (scope) {
 
             scope.items = [
-                { label: 'Home', state: 'home' },
-                { label: 'About', state: 'about' },
-                { label: 'Documentation', state: 'docs' },
-                { label: 'Members Only', state: 'membersOnly', auth: true }
+                { label: 'Home', state: 'home' }
             ];
 
             scope.user = null;
@@ -24,6 +21,10 @@ app.directive('navbar', function ($rootScope, AuthService, AUTH_EVENTS, $state) 
                    $state.go('home');
                 });
             };
+
+            scope.goHome = function() {
+                $state.go('home');
+            }
 
             var setUser = function () {
                 AuthService.getLoggedInUser().then(function (user) {
