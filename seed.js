@@ -27,17 +27,20 @@ var Memory = Promise.promisifyAll(mongoose.model('Memory'));
 var seedUsers = function () {
 
     var users = [
-        {
+        {   
+            name: 'Fullstack',
             email: 'testing@fsa.com',
             password: 'password'
         },
         {
+            name: 'Barack Obama',
             email: 'obama@gmail.com',
             password: 'potus',
             photo: 'https://www.whitehouse.gov/sites/whitehouse.gov/files/images/Administration/People/president_official_portrait_hires.jpg'
             
         },
         {
+            name: 'Grumpy Cat',
             email: 'grumpy@grumpy.com',
             password: 'hello',
             photo: 'https://pbs.twimg.com/profile_images/616542814319415296/McCTpH_E.jpg'

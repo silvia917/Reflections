@@ -2,22 +2,24 @@
 <p class="centered">Add a new memory!</p>
 	<div id="memory-form">
       <div id="calendar">
-      	<span class="centered">Select a date for your memory</span>
+      	<span class="centered">Select a date for your memory (required)</span>
          <span class="input-group">
-          <input type="text" id="date" class="form-control" uib-datepicker-popup="{{format}}" ng-model="dt" is-open="status.opened" max-date="maxDate" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+          <input type="text" id="date" class="form-control" uib-datepicker-popup="{{format}}" ng-model="memory.date" is-open="status.opened" max-date="maxDate" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
               <span class="input-group-btn">
                 <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
               </span>
         </div>
         <p class="adding-photo">Add a photo url</p>
-    	<input class='media-url' type='text'/>
-    	<p class="adding-photo">Make a video or click <a ng-click="recording()">here</a> to link to a youtube video!</p>
-    	<input ng-hide="record" class='media-url' type='text'/>
+    	<input ng-model="memory.photo" class='media-url' type='text'/>
+    	<p class="adding-photo">Make a video or link to a youtube video!</p>
+    	<input ng-model="memory.youtube" class='media-url' type='text'/>
     <camera id='MyFirstCamera' data-app-id='a-c08a0030-6bab-0133-0f66-22000b789ce2'></camera>
     <div class="form-group">
   		<p id="text">Write your reflection!</p>
-  <textarea class="form-control" rows="5" id="text"></textarea>
-  <p>{{record}}</p>
+  <textarea ng-model="memory.memory" rows="5" id="text"></textarea>
+ 	<div><button id="submit-memory" type="submit" ng-click="submitMemory()">Submit!</button>
+ 	</div>
+ 	<p>{{memory}}</p>
 </div>
 </div>
  </div>

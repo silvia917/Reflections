@@ -16,6 +16,7 @@ router.get('/', function(req, res, next) {
 
 router.post('/', function(req, res, next) {
 	var newMemory;
+	console.log('hihimemories')
 	console.log("req.body", req.body)
 	Memory.create(req.body)
 		.then(function(memory) {

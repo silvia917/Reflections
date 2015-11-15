@@ -5,6 +5,7 @@ var Memory = require('./memory')
 var Schema = mongoose.Schema;
 
 var schema = new mongoose.Schema({
+    name: String,
     email: {
         type: String
     },

@@ -1,11 +1,12 @@
-app.controller('AddCtrl', function($scope) {
+app.controller('AddCtrl', function($scope, MemoryFactory, currentUser) {
+	$scope.memory = {}
 	 $scope.today = function() {
-    $scope.dt = new Date();
+    $scope.memory.date = new Date();
   };
   $scope.today();
 
   $scope.clear = function () {
-    $scope.dt = null;
+    $scope.memory.date = null;
   };
 
   $scope.maxDate = new Date(2020, 5, 22);
@@ -15,7 +16,7 @@ app.controller('AddCtrl', function($scope) {
   };
 
   $scope.setDate = function(year, month, day) {
-    $scope.dt = new Date(year, month, day);
+    $scope.memory.date = new Date(year, month, day);
   };
 
   $scope.dateOptions = {
@@ -61,10 +62,9 @@ app.controller('AddCtrl', function($scope) {
      return '';
   };
 
-  $scope.record = true;
+  $scope.memory.user = currentUser._id;
 
-  $scope.recording = function() {
-  	$scope.record = !$scope.record;
-  	$scope.$digest();
+  $scope.submitMemory = function() {
+  	 return MemoryFactory.addNewMemory($scope.memory)
   }
 })
