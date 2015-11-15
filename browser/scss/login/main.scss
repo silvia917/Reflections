@@ -1,4 +1,33 @@
 #login-form {
-  width: 60%;
+  width: 40%;
   margin: 0 auto;
+  font-family: Sofia;
+  font-size: 1.5em;
+  float: left;
+  color: white;
+  padding-top: 50px;
+}
+
+#signup-form {
+  width: 40%;
+  margin: 0 auto;
+  font-family: Sofia;
+  font-size: 1.5em;
+  color: white;
+  padding-top: 50px;
+}
+
+.login {
+	color: grey;
+	display: inline;
+	font-size: 1.5em;
+	text-align: center;
+	padding-left: 120px;
+}
+
+.create {
+  color: grey;
+  display: inline;
+  font-size: 1.5em;
+  text-align: center;
 }

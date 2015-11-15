@@ -1,0 +1,55 @@
+#calendar {
+	max-width: 40%;
+	margin-right: 100px;
+	}
+
+#memory-form {
+	font-size: 1.3em;
+	color: black;
+	margin-bottom: 20px;
+	margin-left: 100px;
+	padding-top: 10px
+}
+
+p.centered {
+	text-align: center;
+	color: black;
+	font-size: 2.5em;
+	padding-top: 30px;
+}
+
+span.centered {
+	margin-top: -10px;
+}
+
+
+#text {
+	padding-top: 10px;
+	max-width: 70%;
+}
+
+.adding-photo {
+	padding-top: 10px;
+	width: 50%;
+}
+.media-url {
+	width: 40%;
+	display: block;
+	margin-bottom: 15px;
+}
+
+#form-background {
+	margin-top: 20px;
+	border-radius: 20px;
+	height: 600px;
+	background-size: cover;
+	background-image: url('http://images.clipartpanda.com/blue-clouds-background-blue-cloud-background-blue2-19029417-1920-9861.jpg');
+}
+
+#adding-box {
+	background-color: white;
+	margin-top: 20px;
+	border-radius: 20px;
+	max-width: 85%;
+	margin-left: 50px;
+}

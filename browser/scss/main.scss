@@ -1,9 +1,10 @@
 * {
   box-sizing: border-box;
+  font-family: Sofia;
 }
 
 body {
-  background: #fdfdfd;
+  background: #ADD8E6;
 }
 
 @mixin clearfix {
@@ -15,7 +16,7 @@ body {
 }
 
 #main {
-  padding-top: 60px;
+  padding-top: 0px;
   width: 1200px;
   margin: 0 auto;
 }
@@ -25,3 +26,5 @@ body {
 @import 'about/main';
 @import 'tutorial/main';
 @import 'login/main';
+@import 'timeline/main';
+@import 'add/main';

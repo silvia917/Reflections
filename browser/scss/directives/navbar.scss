@@ -1,36 +1,46 @@
 navbar {
-
+  font-family: Sofia;
   display: block;
-  background: white;
-  border-bottom: 1px solid black;
-  box-shadow: 1px 1px 14px -3px black;
+  background: #ADD8E6;
+  border-bottom: 2px solid white;
+  box-shadow: 1px 1px 14px -3px white;
+  font-size: 2em;
+  color: white;
 
   .container {
     width: 91%;
     max-width: 1340px;
-    padding-top: 20px;
-  }
-
-  fullstack-logo {
-    margin-top: 5px;
-    margin-right: 20px;
-    width: 40px;
   }
 
   a {
-    color: black;
-    font-size: 16px;
+    color: white;
   }
 
+  div {
+    float: left;
+    font-size: 30px;
+    margin-left: 40px;
+    margin-top: 10px;
+
+    .navbar-header {
+      font-size: 1em;
+      padding-right: 10px;
+    }
+
+    .navbar-header:hover {
+      color: #23527c;
+    }
+
+    .glyphicon-cloud {
+      vertical-align: middle;
+    }
+
+  }
   .nav > li > a {
     cursor: pointer;
     transition: color 0.2s;
-    &.active {
-      color: darken(#f31214, 10%);
-    }
     &:hover {
       background: none;
-      color: #f31214;
     }
     &:focus {
       background: none;
@@ -39,24 +49,44 @@ navbar {
 
   .login-button {
     float: right;
-    border: 1px solid black;
     margin-top: 10px;
     background: none;
     outline: none !important;
+    font-size: 20px;
+  }
+
+  .login-button:hover {
+    color: #23527c;
   }
 
   .welcome {
     float: right;
-    margin-top: 12px;
+    margin-top: 8px;
+    vertical-align: bottom;
     span {
-      color: black;
-      font-size: 16px;
+      color: white;
+      font-size: 0.8em;
       margin-right: 5px;
-    }
+      }
     a {
-      color: #f30046;
+      color: white;
       cursor: pointer;
+      padding: 7px;
+      font-size: 0.8em;
+      vertical-align: top;
+      margin: 5px;
+    }
+    #logout {
+      border: 2px solid white;
+      border-radius: 5px;
+    }
+
+    #logout:hover {
+      border: 2px solid #23527c;
     }
   }
+}
 
+.navbar-static-top {
+  margin-bottom: 5px;
 }
