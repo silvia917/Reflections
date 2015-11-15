@@ -1,4 +1,4 @@
-app.controller('AddCtrl', function($scope, MemoryFactory, currentUser) {
+app.controller('AddCtrl', function($scope, MemoryFactory, currentUser, $state) {
 	$scope.memory = {}
 	 $scope.today = function() {
     $scope.memory.date = new Date();
@@ -66,5 +66,11 @@ app.controller('AddCtrl', function($scope, MemoryFactory, currentUser) {
 
   $scope.submitMemory = function() {
   	 return MemoryFactory.addNewMemory($scope.memory)
+      .then(function(memory) {
+        return memory
+      })
+      .then(function() {
+        $state.go('timeline')
+      })
   }
 })

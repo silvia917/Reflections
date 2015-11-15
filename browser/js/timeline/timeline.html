@@ -3,8 +3,8 @@
 </div>
 
 <div ng-repeat="memory in memories" data-sr-container='{ }'>
-	<div data-sr="enter left, over 2s" class='individual'>
-	<span class='memory date' >{{memory.date}}</span>
-	<span class='memory text' data-sr="wait 2s, ease-in-out 100px">{{memory.memory}}</span>
+	<div class='individual'>
+	<span class='memory date fade-in' ng-enter>{{memory.date}}</span>
+	<span class='memory text fade-in'>{{memory.memory}}</span>
 </div>
 </div>

@@ -1,4 +1,4 @@
-app.controller('TimelineCtrl', function($scope, currentTimeline, userPhoto) {
+app.controller('TimelineCtrl', function($scope, currentTimeline, userPhoto, $timeout) {
 
 	$scope.photo = userPhoto
 
