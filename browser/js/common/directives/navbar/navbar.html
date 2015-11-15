@@ -4,7 +4,7 @@
         <button ng-show="!user" ui-sref="login" class="btn login-button">Login</button>
         <div ng-show="user" class="welcome">
             <a class="navbar-header" ng-click='seeTimeline()'>My Timeline</a>
-            <a class="navbar-header">Add a memory!</a>
+            <a class="navbar-header" ng-click="addMemory()">Add a memory!</a>
             <a id="logout" class="navbar-header" ng-click="logout()">Logout</a>
         </div>
     </div>

@@ -16,7 +16,7 @@ body {
 }
 
 #main {
-  padding-top: 60px;
+  padding-top: 0px;
   width: 1200px;
   margin: 0 auto;
 }
@@ -27,3 +27,4 @@ body {
 @import 'tutorial/main';
 @import 'login/main';
 @import 'timeline/main';
+@import 'add/main';

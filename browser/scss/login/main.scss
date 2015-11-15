@@ -5,6 +5,7 @@
   font-size: 1.5em;
   float: left;
   color: white;
+  padding-top: 50px;
 }
 
 #signup-form {
@@ -13,13 +14,20 @@
   font-family: Sofia;
   font-size: 1.5em;
   color: white;
+  padding-top: 50px;
 }
 
 .login {
-	font-family: Sofia;
 	color: grey;
 	display: inline;
 	font-size: 1.5em;
 	text-align: center;
 	padding-left: 120px;
+}
+
+.create {
+  color: grey;
+  display: inline;
+  font-size: 1.5em;
+  text-align: center;
 }

@@ -71,7 +71,7 @@ var seedMemories = function() {
         user: 'grumpy@grumpy.com'
     },
     {
-        date: new Date('Jul 7, 2015'),
+        date: new Date('2015-07-06'),
         memory: "Went to Greece! I hated it.",
         user: 'grumpy@grumpy.com'
     }

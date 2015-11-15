@@ -40,6 +40,10 @@ app.directive('navbar', function ($rootScope, AuthService, AUTH_EVENTS, $state) 
                 $state.go('timeline')
             }
 
+            scope.addMemory = function() {
+                $state.go('add')
+            }
+
             setUser();
 
             $rootScope.$on(AUTH_EVENTS.loginSuccess, setUser);

@@ -27,6 +27,10 @@ navbar {
       padding-right: 10px;
     }
 
+    .navbar-header:hover {
+      color: #23527c;
+    }
+
     .glyphicon-cloud {
       vertical-align: middle;
     }
@@ -37,7 +41,6 @@ navbar {
     transition: color 0.2s;
     &:hover {
       background: none;
-      color: #f31214;
     }
     &:focus {
       background: none;
@@ -46,11 +49,14 @@ navbar {
 
   .login-button {
     float: right;
-    border: 1px solid white;
     margin-top: 10px;
     background: none;
     outline: none !important;
     font-size: 20px;
+  }
+
+  .login-button:hover {
+    color: #23527c;
   }
 
   .welcome {
@@ -71,9 +77,12 @@ navbar {
       margin: 5px;
     }
     #logout {
-      text-style: underline;
       border: 2px solid white;
       border-radius: 5px;
+    }
+
+    #logout:hover {
+      border: 2px solid #23527c;
     }
   }
 }
