@@ -11,15 +11,20 @@
         </div>
 <!--         <p class="adding-photo">Add a photo url</p>
     	<input ng-model="memory.photo" class='media-url' type='text'/> -->
-    	<p class="adding-photo">Make a video or link to a youtube video!</p>
-    	<input ng-model="memory.youtube" class='media-url' type='text'/>
+    	<p class="adding-photo">Make a video?</p>
+<!--     	<input ng-model="memory.youtube" class='media-url' type='text'/> -->
+<!--   <form ng-model="memory.video">
     <camera id='MyFirstCamera' data-app-id='a-c08a0030-6bab-0133-0f66-22000b789ce2'></camera>
     <div class="form-group">
+    </form> -->
+
+<ziggeo ziggeo-width=320
+          ziggeo-height=240>
+  </ziggeo>
   		<p id="text">Write your reflection!</p>
   <textarea ng-model="memory.memory" rows="5" id="text"></textarea>
  	<div><button id="submit-memory" type="submit" ng-click="submitMemory()">Submit!</button>
  	</div>
- 	<p>{{memory}}</p>
 </div>
 </div>
  </div>

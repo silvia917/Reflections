@@ -13,28 +13,36 @@
 	margin-bottom: 50px;
 }
 
-.memory {
-	background-color: white;
-	border: 2px solid white;
-	border-radius: 15px;
-	padding: 10px;
-}
-
 #date.ng-enter {
  	transform: scale(0.5);
 }
 
 .date {
-	color: grey;
+	border-radius: 15px;
+	color: #ADD8E6;
 	font-size: 27px;
 	margin-right: 20px;
 	font-style: italic;
 	margin-bottom: 10px;
+	background-color: white;
+	padding: 10px;
 }
 
 .text {
 	font-size: 25px;
-	color: #ADD8E6;
+	color: black;
+	padding: 5px;
+	width: 90%;
+	word-wrap: break-word; 
+}
+
+div.text-container {
+	background-color: white;
+	border-radius: 15px;
+	margin-left: 225px;
+	padding: 5px;
+	margin-top: -50px;
+	max-width: 70%;
 }
 
 //the following code is from: http://stackoverflow.com/questions/11679567/using-css-for-fade-in-effect-on-page-load

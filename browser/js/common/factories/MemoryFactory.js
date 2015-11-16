@@ -9,6 +9,13 @@ app.factory('MemoryFactory', function($http) {
 			return $http.post('/api/memories/', input).then(function(res) {
 				return res.data;
 			})
+		},
+		getOneMemory: function(id) {
+			return $http.get('/api/memories/'+id)
+				.then(function(res) {
+					console.log(res.data)
+					return res.data;
+				})
 		}
 	}
 })

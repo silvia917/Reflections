@@ -6,7 +6,6 @@ var schema = new Schema({
 	date: {type: Date, required: true, default: new Date},
 	memory: {type: String, required: true},
 	user: {type: Schema.Types.ObjectId, ref: 'User', required: true},
-	photo: String,
 	youtube: String,
 	video: String
 	})

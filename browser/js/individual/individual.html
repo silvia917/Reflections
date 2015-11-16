@@ -1,0 +1,9 @@
+<div class="container" >
+<img id="user-photo" ng-src="{{memory.photo}}"/>
+</div>
+
+<div class="analysis">
+<div><span class='mdate'>{{memory.date}}</span></div>
+<div class="mtext"><span>{{memory.text}}</span></div>
+<div class="mtext" ng-style="setColor()">Overall, this memory is {{memory.type}} by {{memory.score * 100}}%
+</div>

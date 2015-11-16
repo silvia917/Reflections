@@ -64,6 +64,11 @@ app.controller('AddCtrl', function($scope, MemoryFactory, currentUser, $state) {
 
   $scope.memory.user = currentUser._id;
 
+  ZiggeoApi.Events.on("submitted", function (data) {
+  // alert("Submitted a new video with token '" + data.video.token + "'!");
+  $scope.memory.video = data.video.token;
+});
+
   $scope.submitMemory = function() {
   	 return MemoryFactory.addNewMemory($scope.memory)
       .then(function(memory) {

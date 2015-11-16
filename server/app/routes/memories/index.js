@@ -3,7 +3,9 @@ var router = express.Router();
 var mongoose = require('mongoose')
 var Memory = mongoose.model('Memory')
 var User = mongoose.model('User')
-var _ = require('lodash')
+var _ = require('lodash');
+var AlchemyAPI = require('alchemy-api');
+var alchemy = new AlchemyAPI('51127e7e46317be011447dac045048b87bd253e3');
 
 router.get('/', function(req, res, next) {
 	Memory.find({})
@@ -16,8 +18,6 @@ router.get('/', function(req, res, next) {
 
 router.post('/', function(req, res, next) {
 	var newMemory;
-	console.log('hihimemories')
-	console.log("req.body", req.body)
 	Memory.create(req.body)
 		.then(function(memory) {
 			newMemory = memory;
@@ -45,8 +45,16 @@ router.param("id", function(req, res, next, id){
 })
 
 router.get('/:id', function(req, res) {
-	res.status(200).json(req.memory)
+	alchemy.sentiment(req.memory.memory, {}, function(err, response) {
+  if (err) throw err;
+  var sentiment = response.docSentiment;
+  req.sentiment = sentiment;
+  req.sentiment.text = req.memory.memory
+  req.sentiment.date = req.memory.date
+  req.sentiment.photo = req.memory.user.photo
+	res.status(200).json(req.sentiment)
 })
+});
 
 router.put('/:id', function(req, res, next) {
 	Memory.findById(req.params.id).exec().then(function(memory){

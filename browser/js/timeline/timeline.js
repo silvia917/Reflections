@@ -1,4 +1,4 @@
-app.controller('TimelineCtrl', function($scope, currentTimeline, userPhoto, $timeout) {
+app.controller('TimelineCtrl', function($scope, currentTimeline, userPhoto, $timeout, MemoryFactory, $state) {
 
 	$scope.photo = userPhoto
 
@@ -13,4 +13,9 @@ app.controller('TimelineCtrl', function($scope, currentTimeline, userPhoto, $tim
 	})
 
 	$scope.memories = data;
+
+	$scope.getMemory = function(id) {
+		console.log(id)
+		$state.go('individual', {id: id})
+	}
 })

@@ -54,13 +54,33 @@ var seedUsers = function () {
 var seedMemories = function() {
     var memories = [
     {
-        date: new Date('Jan 20, 2009'),
-        memory: "Became president. Yay!",
+        date: new Date('Jan 3, 2005'),
+        memory: "I was sworn in as a senator on January 3, 2005 becoming the only Senate member of the Congressional Black Caucus. So exciting! CQ Weekly characterized me as a 'loyal Democrat' based on analysis of all Senate votes from 2005 to 2007. Still hoping to run for president.",
         user: 'obama@gmail.com'
     },
     {
         date: new Date('Aug 4, 1961'),
-        memory: "I was born!",
+        memory: "I was born on August 4, 1961, at Kapiʻolani Maternity & Gynecological Hospital.",
+        user: 'obama@gmail.com'
+    },
+    {
+        date: new Date('Feb 10, 2007'),
+        memory: 'Today I announced I am running for President in front of the Old State Capitol building in Springfield, Illinois. I chose this place because it is where Abraham Lincoln delivered his historic "House Divided" speech in 1858. Nervous but excited for the future.',
+        user: 'obama@gmail.com' 
+    },
+    {
+        date: new Date('Sep 10, 1989'),
+        memory: 'I have been working as a summer associate at the Chicago law firm of Sidley Austin since June. Michelle Robinson is my advisor here. I have asked her out on a date several times but she keeps rejecting me. Maybe I should give up.',
+        user: 'obama@gmail.com'
+    },
+    {
+        date: new Date('May 2, 2011'),
+        memory: 'A few weeks ago, I authorized a raid to be conducted by the Navy Seals and now we got Osama Bin Laden! This is incredible and I had the honor of announcing it to the world. I love my job.',
+        user: 'obama@gmail.com'
+    },
+    {
+        date: new Date('Oct 9, 2009'),
+        memory: 'Today, the Norwegian Nobel Committee announced that I had won the 2009 Nobel Peace Prize for my extraordinary efforts to strengthen international diplomacy and cooperation between peoples!! I will accept this award in Oslo, Norway in December. This is such an honor',
         user: 'obama@gmail.com'
     },
     {
